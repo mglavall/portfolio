@@ -11,7 +11,7 @@ function HomePage() {
     <MainLayout>
       <Container>
         <Title>Sup, I'm Marsa</Title>
-        <Hydra width="1000" height="200"></Hydra>
+        <Hydra width="1000" height="1000"></Hydra>
       </Container>
     </MainLayout>
   );

@@ -14,7 +14,7 @@ export const { styled, css } = createStyled({
       $backgroundColor: "#0b0b0b",
     },
     fontSizes: {
-      $1: "12px",
+      $1: "14px",
       $2: "16px",
       $3: "24px",
       $4: "32px",

@@ -5,6 +5,7 @@ import { MainLayout } from "../components/MainLayout/MainLayout";
 import Title from "../components/Text/Title";
 import Text from "../components/Text/Text";
 import Stack from "../components/Stack/Stack";
+import { Link } from "../components/Link/Link";
 
 const Hydra = dynamic(() => import("../containers/Hydra"), { ssr: false });
 
@@ -12,11 +13,18 @@ function HomePage() {
   return (
     <MainLayout>
       <Container>
-        <Title>Sup, I'm Marsa</Title>
+        <Title css={{ my: "$3" }}>Sup, I'm Marsa</Title>
         <Hydra width="1000" height="1000"></Hydra>
-        <Stack justifyContent="spaceBetween">
-          <Text>FRONTEND / DESIGN SYSTEMS</Text>
-          <Text>PORTFOLIO</Text>
+        <Stack justifyContent="spaceBetween" css={{ marginTop: "$3" }}>
+          <Text>
+            A FRONTEND ENGINEER WITH A KEEN INTEREST IN ART AND DESIGN
+          </Text>
+          <Stack direction="column">
+            <Link as="a" css={{ marginBottom: "$1" }}>
+              GITHUB
+            </Link>
+            <Link as="a">TWITTER</Link>
+          </Stack>
         </Stack>
       </Container>
     </MainLayout>

@@ -1,8 +1,7 @@
 import { styled } from "~/styles/stitches.config";
 
-const Text = styled("p", {
+const Text = styled("span", {
   fontSize: "$1",
-  fontFamily: "$primary",
   color: "$primary",
   variants: {
     size: {
@@ -26,8 +25,19 @@ const Text = styled("p", {
       800: {
         fontWeight: 800,
       },
+      400: {
+        fontWeight: 400,
+      },
+    },
+    fontFamily: {
+      $primary: { fontFamily: "$primary" },
+      $secondary: { fontFamily: "$secondary" },
     },
   },
 });
+
+Text.defaultProps = {
+  fontFamily: "$primary",
+};
 
 export default Text;

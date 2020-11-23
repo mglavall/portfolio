@@ -7,4 +7,5 @@ module.exports = {
     ignoreBuildErrors: true,
   },
   assetPrefix: "/portfolio/",
+  basePath: "/portfolio",
 };

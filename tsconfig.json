@@ -17,7 +17,7 @@
     "paths": {
       "~/styles/*": ["src/styles/*"],
       "~/src/*": ["src/*"],
-      "~/static/*": ["static/*"]
+      "~/public/*": ["public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

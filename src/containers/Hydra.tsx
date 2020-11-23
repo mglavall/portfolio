@@ -11,6 +11,7 @@ const Hydra = ({ height = "400", width = "400" }) => {
     const canvas = document.getElementById("hydra-canvas");
     const hydra = new HydraEngine({
       canvas: document.getElementById("hydra-canvas"),
+      detectAudio: false,
     });
 
     // by default, hydra makes everything global.
@@ -23,11 +24,11 @@ const Hydra = ({ height = "400", width = "400" }) => {
       .scrollX([0.1, -0.0625, 0.005, 0.00001], 0)
       .scrollY([0.1, -0.0625, 0.005, 0.00001], 0)
       .out(o0);
-    s1.initCam();
+    s1.initImage("/marsa.jpg");
     src(s1).out(o1);
 
     src(o0)
-      .contrast(2.8)
+      .contrast(0.7)
       .brightness()
       .luma(1.3, 0.2)
       .mult(o1)

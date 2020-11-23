@@ -8,21 +8,21 @@ body {
 
 @font-face {
   font-family: "AkzidenzGrotesk";
-  src: url("~/static/fonts/Akzidenz Grotesk Next Bold.otf");
-  src: url("~/static/fonts/Akzidenz Grotesk Next Regular.otf");
-  src: url("~/static/fonts/Akzidenz Grotesk Next Medium.otf");
+  src: url("/fonts/Akzidenz Grotesk Next Bold.otf");
+  src: url("/fonts/Akzidenz Grotesk Next Regular.otf");
+  src: url("/fonts/Akzidenz Grotesk Next Medium.otf");
 }
 
 @font-face {
   font-family: "AgrandirGrand";
 
-  src: url("~/static/fonts/Agrandir-GrandLight.ttf");
+  src: url("/fonts/Agrandir-GrandLight.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "AgrandirGrand";
-  src: url("~/static/fonts/Agrandir-GrandHeavy.ttf");
+  src: url("/fonts/Agrandir-GrandHeavy.ttf");
   font-weight: 800;
 }
 

@@ -6,12 +6,45 @@ import Title from "../components/Text/Title";
 import Text from "../components/Text/Text";
 import Stack from "../components/Stack/Stack";
 import { Link } from "../components/Link/Link";
+import Head from "next/head";
 
 const Hydra = dynamic(() => import("../containers/Hydra"), { ssr: false });
 
 function HomePage() {
   return (
     <MainLayout>
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/Akzidenz Grotesk Next Bold.otf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Akzidenz Grotesk Next Regular.otf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Akzidenz Grotesk Next Medium.otf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Agrandir-GrandLight.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Agrandir-GrandHeavy.ttf"
+          as="font"
+          crossOrigin=""
+        />
+      </Head>
       <Container>
         <Title css={{ my: "$3" }}>Sup, I'm Marsa</Title>
         <Hydra width="1000" height="1000"></Hydra>

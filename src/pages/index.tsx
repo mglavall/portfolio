@@ -13,45 +13,12 @@ const Hydra = dynamic(() => import("../containers/Hydra"), { ssr: false });
 function HomePage() {
   return (
     <MainLayout>
-      <Head>
-        <link
-          rel="preload"
-          href="/fonts/Akzidenz Grotesk Next Bold.otf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Akzidenz Grotesk Next Regular.otf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Akzidenz Grotesk Next Medium.otf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Agrandir-GrandLight.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/Agrandir-GrandHeavy.ttf"
-          as="font"
-          crossOrigin=""
-        />
-      </Head>
       <Container>
-        <Title css={{ my: "$3" }}>Sup, I'm Marsa</Title>
+        <Title css={{ my: "$3" }}>Oscillate my ass</Title>
+
         <Hydra width="1000" height="1000"></Hydra>
         <Stack justifyContent="spaceBetween" css={{ marginTop: "$3" }}>
-          <Text>
-            A FRONTEND ENGINEER WITH A KEEN INTEREST IN ART AND DESIGN
-          </Text>
+          <Text>COME LOOP THROUGH SPACE AND TIME</Text>
           <Stack direction="column">
             <Link as="a" css={{ marginBottom: "$1" }}>
               GITHUB

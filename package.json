@@ -32,5 +32,8 @@
     "next-videos": "1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "engines": {
+    "node": ">=8 <13"
   }
 }

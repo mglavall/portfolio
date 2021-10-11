@@ -20,6 +20,11 @@
       "~/public/*": ["public/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/containers/Hydra.jsx"
+  ],
   "exclude": ["node_modules"]
 }

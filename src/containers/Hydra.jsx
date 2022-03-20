@@ -8,6 +8,9 @@ const StyledCanvas = styled("canvas", {
 
 const Hydra = ({ height = "400", width = "400" }) => {
   useEffect(() => {
+    if (typeof window == "undefined") {
+      return;
+    }
     const canvas = document.getElementById("hydra-canvas");
     const hydra = new HydraEngine({
       canvas: document.getElementById("hydra-canvas"),
@@ -44,7 +47,7 @@ const Hydra = ({ height = "400", width = "400" }) => {
     //   .thresh(0.2, 0.1)
     //   .out(o2);
     // render(o2);
-  });
+  }, []);
 
   return (
     <div style={{ height: "200px", overflow: "hidden" }}>
